@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Snake Game</title>
+        <style>
+            canvas{
+                display: block;
+                margin: 0 auto;
+            }
+            body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-color: green;
+      background-image: url('img/PhY9.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: 100%;
+    }
+    
+
+    #game-board {
+      background-color: #CCC;
+      width: 100vmin;
+      height: 100vmin;
+      display: grid;
+      grid-template-rows: repeat(21, 1fr);
+      grid-template-columns: repeat(21, 1fr);
+      border: .25vmin solid black;
+      
+    }
+        </style>
+    </head>
+    <canvas id="snake" width="608" height="608"></canvas>
+    <script src="snake.js"></script>
+</html>
